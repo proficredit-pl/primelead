@@ -2,7 +2,7 @@
 
 ## Dostęp do API
 
-Aby uzyskać dostęp do API PrimeLead, należy skontaktować się z obsługą techniczną Prime Lead. Reklamodawca uzyska unikalny identyfikator Reklamodawcy. Identyfikatora nie należy przekazywać osobom trzecim, zabrania się także jego rozpowszechniania. 
+Aby uzyskać dostęp do API Prime Lead, należy skontaktować się z obsługą techniczną Prime Lead. Reklamodawca uzyska unikalny identyfikator Reklamodawcy. Identyfikatora nie należy przekazywać osobom trzecim, zabrania się także jego rozpowszechniania. 
 
 ## Sposoby aktualizacji akcji
 
@@ -73,7 +73,7 @@ Istnieje możliwość tworzenia akcji poprzez API Prime Lead. Aby zarejestrować
 
 ## Schemat odpowiedzi HTTP
 
-Odpowiedź API PrimLead przekazywana jest w postaci JSON oraz odpowiednim do danego przypadku kodem odpowiedzi HTTP. Struktura JSON zawiera wartości: 
+Odpowiedź API Prime Lead przekazywana jest w postaci JSON oraz odpowiednim do danego przypadku kodem odpowiedzi HTTP. Struktura JSON zawiera wartości: 
 
 "<em>success</em>" - boolean, określa czy dana akcja została wykonana pomyślnie;
 
@@ -83,7 +83,7 @@ Odpowiedź API PrimLead przekazywana jest w postaci JSON oraz odpowiednim do dan
 
 ## Kody odpowiedzi HTTP
 
-Możliwe odpowiedzi API PrimLead:
+Możliwe odpowiedzi API Prime Lead:
 
 | kod  | <em>success</em> | <em>message</em> | opis/znaczenie |
 | ------------- | ------------- | ------------- | ------------- |
