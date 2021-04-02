@@ -6,16 +6,17 @@ Aby uzyskać dostęp do API PrimeLead, należy skontaktować się z obsługą te
 
 ## Sposoby aktualizacji akcji
 
-W wyniku kliknięć w materiały reklamowe opublikowane przez Wydawców, użytkownik jest jest kierowany na stronę Reklamodawcy. Podczas przekierowania użytkownika w systemie PrimeLead generowane jest tzw. ID akcji. Identyfikator jest przekazywany Reklamodawcy w formie parametru GET **utm_action** URL'a. Podsługując się identyfikatorem Reklamodawca aktualizuje status Akcji w systemie PrimeLead za pomocą Postback'ów lub dedykowanej metody API.
+W wyniku kliknięć w materiały reklamowe opublikowane przez Wydawców, użytkownik jest jest kierowany na stronę Reklamodawcy. Podczas przekierowania użytkownika w systemie PrimeLead generowane jest **UUID Akcji**. Identyfikator jest przekazywany Reklamodawcy w formie parametru GET **utm_action** URL'a. Podsługując się identyfikatorem Reklamodawca aktualizuje status Akcji w systemie PrimeLead za pomocą Postback'ów lub dedykowanej metody API.
 
 ## Postback
 
-**GET** `https://dev-ads.primelead.net/api/v1/postback/{status}/{action_uuid}`
+Wersja DEV: **GET** `https://dev-ads.primelead.net/api/v1/postback/{status}/{action_uuid}`
+Wersja PROD: **GET** `https://ads.primelead.net/api/v1/postback/{status}/{action_uuid}
 
 | Parametr routingu  | Typ | Wartość | Opis |
 | ------------- | ------------- | ------------- | ------------- |
 | `{status}`  | string | wide_contact<br />narrow_contact<br />application<br />contract<br />contract_canceled | nowy status akcji  |
-| `{action_uuid}`  | string |  | UUID akcji |
+| `{action_uuid}`  | string |  | UUID Akcji |
 
 ### Parametry
 
