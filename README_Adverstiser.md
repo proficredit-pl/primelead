@@ -47,7 +47,7 @@ Wersja PROD: **POST** `https://ads.primelead.net/api/v1/actions/{advertiserUUID}
 
 #### Parametry
 
-Żądanie typu POST powinno zawierać:
+Wywołanie typu POST powinno zawierać:
 
 | Parametr url  | Typ | Wartość | Opis |
 | ------------- | ------------- | ------------- | ------------- |
