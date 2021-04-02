@@ -1,12 +1,12 @@
-# Prime Lead - Dokumentacja API v1
+# PrimeLead - Dokumentacja API v1
 
 ## Dostęp do API
 
-Aby uzyskać dostęp do API Prime Lead, należy skontaktować się z obsługą techniczną Prime Lead. Reklamodawca uzyska unikalny identyfikator Reklamodawcy. Identyfikatora nie należy przekazywać osobom trzecim, zabrania się także jego rozpowszechniania. 
+Aby uzyskać dostęp do API PrimeLead, należy skontaktować się z obsługą techniczną . Reklamodawca uzyska unikalny identyfikator. Identyfikatora nie należy przekazywać osobom trzecim. Zabrania się także jego rozpowszechniania. 
 
 ## Sposoby aktualizacji akcji
 
-Na podstawie kliknięć w reklamę produktu generowane są akcje, których status reklamodawca może aktualizować na dwa sposoby - poprzez metodę “postback” oraz API.
+W wyniku kliknięć w materiały reklamowe opublikowane przez Wydawców, użytkownik jest jest kierowany na stronę Reklamodawcy. Podczas przekierowania użytkownika w systemie PrimeLead generowane jest tzw. ID akcji. Identyfikator jest przekazywany Reklamodawcy w formie parametru GET **utm_action** URL'a. Podsługując się identyfikatorem Reklamodawca aktualizuje status Akcji w systemie PrimeLead za pomocą Postback'ów lub dedykowanej metody API.
 
 ## Postback
 
