@@ -1,17 +1,19 @@
-# Wydawca
+# PrimeLead - Dokumentacja API v1.1
 
-## Dostęp do API
+## Wydawca
+
+### Dostęp do API
 
 Aby uzyskać dostęp do API PrimeLead umożliwiającego Wydawcy wysyłkę leadów do Reklamodawcy, należy skontaktować się z obsługą techniczną. W zgłoszeniu należy podać numer IP hosta, z którego będą następowały wywołania API. Przy wywoływaniu metody API Wydawca posługuje się parametrem **publisherUUID**, możliwym do pobrania z profilu Wydawcy w systemie PrimeLead.
 
-## Wysyłanie Kontaktów do Reklamodawcy
+### Wysyłanie Kontaktów do Reklamodawcy
 
 Wersja DEV: **POST** `https://dev-ads.primelead.net/api/v1/contacts/{publisherUUID}`<br />
 Wersja PROD: **POST** `https://ads.primelead.net/api/v1/contacts/{publisherUUID}`
 
 Aby zarejestrować Akcję w systemie PrimeLead i zainicjować wysyłkę leada do Reklamodawcy należy wywołać powyższą metodę, przekazując w BODY dane, które powinny zostać przekazane do Reklamodawcy.
 
-# Schemat odpowiedzi HTTP
+## Schemat odpowiedzi HTTP
 
 Odpowiedź API PrimeLead przekazywana jest w postaci JSON oraz odpowiednim do danego przypadku kodem odpowiedzi HTTP. Struktura JSON zawiera wartości: 
 
@@ -21,7 +23,7 @@ Odpowiedź API PrimeLead przekazywana jest w postaci JSON oraz odpowiednim do da
 
 "<em>errors</em>" - array, zawiera listę napotkanych błędów walidacji.
 
-# Kody odpowiedzi HTTP
+## Kody odpowiedzi HTTP
 
 Możliwe odpowiedzi API PrimeLead:
 
