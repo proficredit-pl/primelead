@@ -10,7 +10,7 @@ W wyniku kliknięć w materiały reklamowe opublikowane przez Wydawców, użytko
 
 ## Postback
 
-Wersja DEV: **GET** `https://dev-ads.primelead.net/api/v1/postback/{status}/{action_uuid}`
+Wersja DEV: **GET** `https://dev-ads.primelead.net/api/v1/postback/{status}/{action_uuid}<br />
 Wersja PROD: **GET** `https://ads.primelead.net/api/v1/postback/{status}/{action_uuid}
 
 | Parametr routingu  | Typ | Wartość | Opis |
