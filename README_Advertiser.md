@@ -34,7 +34,7 @@ Wersja PROD: **GET** `https://ads.primelead.net/api/v1/postback/{status}/{action
 
 Parametr `contract_net_value` jest wymagany w trakcie zmiany statusu Akcji na `contract`.
 
-Przykład wywołania: `https://dev-ads.primelead.net/api/v1/postback/wide_contact/309c14b9-1ebb-4975-a608-7bf2ae517f2b?customer_type=new&contract_net_value=5000.00`<br />
+Przykład wywołania: `https://dev-ads.primelead.net/api/v1/postback/wide_contact/309c14b9-1ebb-4975-a608-7bf2ae517f2b?customer_type=new&contract_net_value=5000.00&contract_nominal_value=8000.00`<br />
 
 ### API
 
