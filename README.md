@@ -2,7 +2,7 @@
 
 ## Dostęp do API
 
-Aby uzyskać dostęp do API PrimeLead, należy skontaktować się z obsługą techniczną . Reklamodawca uzyska unikalny identyfikator. Identyfikatora nie należy przekazywać osobom trzecim. Zabrania się także jego rozpowszechniania. 
+Aby uzyskać dostęp do API PrimeLead, należy skontaktować się z obsługą techniczną. Reklamodawca uzyska unikalny identyfikator. Identyfikatora nie należy przekazywać osobom trzecim. Zabrania się także jego rozpowszechniania. 
 
 ## Sposoby aktualizacji akcji
 
