@@ -52,7 +52,7 @@ Wersja PROD: **POST** `https://ads.primelead.net/api/v1/actions/{advertiserUUID}
 | ------------- | ------------- | ------------- | ------------- |
 | `{actionUuid}`  | string || UUID Akcji  |
 | `{customerType}`  | NULL<br />string | NULL<br />returning<br />new | Rodzaj klienta (nowy/powracający) |
-| `{wideContact}`  | NULL<br />string | NULL<br />data, format: Y-m-d H:i:s | Data kontaktu Kontaktu |
+| `{wideContact}`  | NULL<br />string | NULL<br />data, format: Y-m-d H:i:s | Data zapisania Kontaktu |
 | `{narrowContact}`  | NULL<br />string | NULL<br />data, format: Y-m-d H:i:s | Data weryfikacji Kontaktu |
 | `{application}`  | NULL<br />string | NULL<br />data, format: Y-m-d H:i:s | Data złożenia Wniosku |
 | `{contract}`  | NULL<br />string | NULL<br />data, format: Y-m-d H:i:s | Data podpisania Umowy |
