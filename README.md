@@ -31,11 +31,14 @@ Wersja PROD: **GET** `https://ads.primelead.net/api/v1/postback/{status}/{action
 | `{contract_net_value}`  | float | > 0 | wartość kontraktu netto |
 | `{contract_nominal_value}`  | float<br />NULL | > 0<br />NULL | wartość kontraktu brutto |
 
-Parametr `contract_net_value` musi zostać przekazany przed lub w trakcie zmiany statusu akcji na `contract`.
+Parametr `contract_net_value` jest wymagany w trakcie zmiany statusu Akcji na `contract`.
+
+Przykład wywołania: `https://dev-ads.primelead.net/api/v1/postback/wide_contact/309c14b9-1ebb-4975-a608-7bf2ae517f2b?customer_type=new&contract_net_value=5000.00`<br />
 
 ## API
 
-**POST** `https://dev-ads.primelead.net/api/v1/actions/{advertiserUUID}`
+Wersja DEV: **POST** `https://dev-ads.primelead.net/api/v1/actions/{advertiserUUID}`<br />
+**POST** ``
 
 | Parametr routingu  | Typ | Wartość | Opis |
 | ------------- | ------------- | ------------- | ------------- |
