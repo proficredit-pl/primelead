@@ -27,9 +27,9 @@ Wersja PROD: **GET** `https://ads.primelead.net/api/v1/postback/{status}/{action
 
 | Parametr url  | Typ | Wartość | Opis |
 | ------------- | ------------- | ------------- | ------------- |
-| `{customer_type}`  | NULL<br />string| NULL<br />returning<br />new | typ klienta  |
-| `{contract_net_value}`  | float | > 0 | wartość kontraktu netto |
-| `{contract_nominal_value}`  | float<br />NULL | > 0<br />NULL | wartość kontraktu brutto |
+| `{customer_type}`  | NULL<br />string| NULL<br />returning<br />new | Rodzaj klienta (nowy/powracający)  |
+| `{contract_net_value}`  | float | > 0 | Wartość netto umowy |
+| `{contract_nominal_value}`  | float<br />NULL | > 0<br />NULL | Wartość brutto umowy |
 
 Parametr `contract_net_value` jest wymagany w trakcie zmiany statusu Akcji na `contract`.
 
@@ -38,11 +38,11 @@ Przykład wywołania: `https://dev-ads.primelead.net/api/v1/postback/wide_contac
 ## API
 
 Wersja DEV: **POST** `https://dev-ads.primelead.net/api/v1/actions/{advertiserUUID}`<br />
-**POST** ``
+Wersja PROD: **POST** `https://ads.primelead.net/api/v1/actions/{advertiserUUID}`<br />
 
 | Parametr routingu  | Typ | Wartość | Opis |
 | ------------- | ------------- | ------------- | ------------- |
-| `{advertiserUUID}`  | string |  | unikalny identyfikator reklamodawcy  |
+| `{advertiserUUID}`  | string |  | UUID Reklamodawcy  |
 
 ### Parametry
 
@@ -50,15 +50,15 @@ Wersja DEV: **POST** `https://dev-ads.primelead.net/api/v1/actions/{advertiserUU
 
 | Parametr url  | Typ | Wartość | Opis |
 | ------------- | ------------- | ------------- | ------------- |
-| `{actionUuid}`  | string || UUID akcji  |
-| `{customerType}`  | NULL<br />string | NULL<br />returning<br />new | typ klienta |
-| `{wideContact}`  | NULL<br />string | NULL<br />data, format: Y-m-d H:i:s | data pierwszego kontaktu |
-| `{narrowContact}`  | NULL<br />string | NULL<br />data, format: Y-m-d H:i:s | data weryfikacji kontaktu |
-| `{application}`  | NULL<br />string | NULL<br />data, format: Y-m-d H:i:s | data złożenia wniosku |
-| `{contract}`  | NULL<br />string | NULL<br />data, format: Y-m-d H:i:s | data podpisania kontraktu |
-| `{contractNetValue}`  | NULL<br />float | > 0 | wartość kontraktu netto |
-| `{contractNominalValue}`  | NULL<br />float | NULL<br />> 0 | wartość kontraktu brutto |
-| `{contractCanceled}`  | NULL<br />string | NULL<br />data, format: Y-m-d H:i:s | data zamknięcia kontraktu |
+| `{actionUuid}`  | string || UUID Akcji  |
+| `{customerType}`  | NULL<br />string | NULL<br />returning<br />new | Rodzaj klienta (nowy/powracający) |
+| `{wideContact}`  | NULL<br />string | NULL<br />data, format: Y-m-d H:i:s | Data kontaktu Kontaktu |
+| `{narrowContact}`  | NULL<br />string | NULL<br />data, format: Y-m-d H:i:s | Data weryfikacji Kontaktu |
+| `{application}`  | NULL<br />string | NULL<br />data, format: Y-m-d H:i:s | Data złożenia Wniosku |
+| `{contract}`  | NULL<br />string | NULL<br />data, format: Y-m-d H:i:s | Data podpisania Umowy |
+| `{contractNetValue}`  | NULL<br />float | > 0 | Wartość netto Umowy |
+| `{contractNominalValue}`  | NULL<br />float | NULL<br />> 0 | Wartość brutto Umowy |
+| `{contractCanceled}`  | NULL<br />string | NULL<br />data, format: Y-m-d H:i:s | Data odstąpienia od Umowy |
 
 ### Rejestrowanie akcji metodą POST
 
